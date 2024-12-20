@@ -1,0 +1,78 @@
+@use "variables";
+
+.works {
+  // padding: 20px;
+  font-family: variables.$main-font;
+  color: variables.$white;
+  a {
+    color: variables.$white;
+    text-decoration: none;
+  }
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+  @media (min-width: 768px) {
+    font-size: 2em;
+    padding-left: 150px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 4em;
+    padding-left: 150px;
+  }
+}
+
+.accordion-content {
+  padding: 10px;
+  background: transparent;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;   
+  }
+}
+
+.work {
+  margin-bottom: 10px;
+  border: 1px solid variables.$white;
+  border-radius: 12px;
+  padding: 30px;
+  @media (min-width: 1024px) {
+    min-width: 60em;
+    max-width: 64em;
+    justify-self: center;    
+  }
+}
+
+.work h4 {
+  margin: 0 0 5px;
+  text-decoration: overline;
+}
+
+.work p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.work-details {
+  display: flex;
+  flex-direction: column;
+}
+.work-image {
+  border-radius: 12px;
+  max-width: 10em;
+  @media (min-width: 768px) {
+    max-width: 30em;
+  }
+}
+
+.projectLink {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+}

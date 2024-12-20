@@ -2,12 +2,12 @@ $white: #f8ece4;
 
 @font-face {
     font-family: Kandinsky;
-    src: url(public/kandinsky.ttf) format('truetype');
+    src: url(/kandinsky.ttf) format('truetype');
 }
 
 @font-face {
     font-family: Montreal;
-    src: url(public/NeueMontreal-Light.otf) format('opentype');
+    src: url(/NeueMontreal-Light.otf) format('opentype');
 }
 
 $title-font: Kandinsky;

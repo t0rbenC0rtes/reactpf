@@ -5,11 +5,14 @@
 }
 
 @keyframes fill {
-  from {
+  0% {
     fill: transparent;
   }
-  to {
+  90% {
     fill: #f8ece4;
+  }
+  100% {
+    fill: transparent;
   }
 }
 
@@ -18,6 +21,7 @@
 #heroSVG {
   animation: fill 1s ease forwards 3s;
   width: 100%;
+  max-width: 1024px;  
 }
 
 #heroSVG path:nth-child(1) {

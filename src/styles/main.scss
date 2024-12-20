@@ -2,13 +2,18 @@
 @use "reset";
 @use "variables";
 @use "navbar";
+@use "bubbles";
+@use "about";
+@use "works";
+@use "skills";
 
 body {
-  height: 1000vh; 
-  background-image:  linear-gradient(#070709 1px, transparent 1px), linear-gradient(to right, #070709 1px, #1f2328 1px);
-  background-size: 100px 100px;
-  background-attachment: fixed;
+  height: 1000vh;
+  // background-image:  linear-gradient(#070709 1px, transparent 1px), linear-gradient(to right, #070709 1px, #1f2328 1px);
+  // background-size: 100px 100px;
+  // background-attachment: fixed;
   color: variables.$white;
+  overflow-x: hidden;
 }
 
 .container {
@@ -16,7 +21,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  place-items: center;
+  place-items: center;  
   padding: 0 15px;
 }
 

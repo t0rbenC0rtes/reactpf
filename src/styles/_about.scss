@@ -1,0 +1,6 @@
+@use 'variables';
+
+.typed-container {
+    font-family: variables.$main-font;
+    color: variables.$white;
+}
