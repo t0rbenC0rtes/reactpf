@@ -8,9 +8,11 @@ import {
   FaHtml5,
   FaGithub,
   FaSass,
+  FaCannabis,
 } from "react-icons/fa";
 import { LuPiano } from "react-icons/lu";
 import { SiMongodb } from "react-icons/si";
+import { GiUnicycle } from "react-icons/gi";
 import Modal from "./Modal";
 
 const getRandomPosition = () => ({
@@ -46,6 +48,8 @@ const skills = [
   { id: 7, icon: <SiMongodb />, name: "MongoDB", description: "EN PLEIN DATA GUEULE !" },
   { id: 8, icon: <FaGithub />, name: "GitHub", description: "I know git add, commit and push. That's all I need, right ?" },
   { id: 9, icon: <FaSass />, name: "Sass", description: "My appartment is a mess. But my CSS is now clean and organized." },
+  { id: 10, icon: <FaCannabis />, name: "Experienced grower", description: "Kids, say no to drugs. At least once." },
+  { id: 11, icon: <GiUnicycle />, name: "EUC enjoyer", description: "Electric Unicycle changed my life." },
 ];
 
 

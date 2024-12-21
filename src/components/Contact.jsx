@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ContactButtons from "./ContactButtons";
 
 const Contact = () => {
   return (
-    <div><h1>CONTACT</h1></div>
-  )
-}
+    <div className="contact-page">      
+      <ContactButtons />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
