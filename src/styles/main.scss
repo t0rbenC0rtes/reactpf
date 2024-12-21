@@ -7,9 +7,9 @@
 @use "works";
 @use "skills";
 @use "modal";
+@use "footer";
 
-body {
-  height: 100vh;  
+body {  
   color: variables.$white;
   overflow-x: hidden;
 }
@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;  
-  padding: 0 15px;
+  padding: 0 15px;  
 }
 
 h1 {

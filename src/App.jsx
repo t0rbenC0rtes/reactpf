@@ -11,6 +11,7 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import PageTransition from "./components/PageTransition";
 import Bubbles from "./components/Bubbles";
+import Footer from "./components/Footer";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -56,6 +57,7 @@ function App() {
       <div className="container">
         <Navbar />
         <AnimatedRoutes />
+        <Footer />
       </div>
     </Router>
   );

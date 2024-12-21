@@ -1,0 +1,21 @@
+@use 'variables';
+
+.footer {
+    width: 100vw;
+    height: 3em;
+    display: flex;
+    place-items: center;
+    justify-content: center;    
+    backdrop-filter: blur(50px);
+    position: fixed;
+    bottom: 0;
+    flex: 1;
+}
+
+.timer {    
+    font-family: variables.$main-font;
+    font-size: .6em;
+    @media (min-width: 425px) {
+        font-size: 1em;
+    }
+}

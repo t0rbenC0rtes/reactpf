@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import projects from "../projects";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Work = ({ title, description, link, image }) => {
   return (
@@ -14,7 +15,7 @@ const Work = ({ title, description, link, image }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View Project
+          View Project <FaExternalLinkAlt className="link-icon" />
         </a>
       </div>
       <img src={image} alt={`${title} thumbnail`} className="work-image" />
