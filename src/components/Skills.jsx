@@ -11,13 +11,14 @@ import {
 } from "react-icons/fa";
 import { LuPiano } from "react-icons/lu";
 import { SiMongodb } from "react-icons/si";
+import Modal from "./Modal";
 
 const getRandomPosition = () => ({
-  x: Math.random() * 300 - 150, // Random X (-150 to 150)
-  y: Math.random() * 300 - 150, // Random Y (-150 to 150)
+  x: Math.random() * 300 - 150,
+  y: Math.random() * 300 - 150,
 });
 
-const SkillButton = ({ icon, position, isExpanded, index }) => {
+const SkillButton = ({ icon, position, isExpanded, index, onClick }) => {
   return (
     <motion.div
       className="skill-button"
@@ -28,6 +29,7 @@ const SkillButton = ({ icon, position, isExpanded, index }) => {
           : { x: 0, y: 0, scale: 0, opacity: 0 }
       }
       transition={{ duration: 0.5, delay: index * 0.1 }}
+      onClick={onClick} // Pass the onClick handler
     >
       {icon}
     </motion.div>
@@ -35,20 +37,23 @@ const SkillButton = ({ icon, position, isExpanded, index }) => {
 };
 
 const skills = [
-  { id: 1, icon: <FaJs />, name: "JavaScript" },
-  { id: 2, icon: <FaReact />, name: "ReactJS" },
-  { id: 3, icon: <FaCss3Alt />, name: "CSS3" },
-  { id: 4, icon: <FaNodeJs />, name: "NodeJS" },
-  { id: 5, icon: <FaHtml5 />, name: "HTML5" },
-  { id: 6, icon: <LuPiano />, name: "Piano" },
-  { id: 7, icon: <SiMongodb />, name: "MongoDB" },
-  { id: 8, icon: <FaGithub />, name: "GitHub" },
-  { id: 9, icon: <FaSass />, name: "Sass" },
+  { id: 1, icon: <FaJs />, name: "JavaScript", description: "JavaScript was my key to the enter the world of algorithms." },
+  { id: 2, icon: <FaReact />, name: "ReactJS", description: "I hated React untill I discovered libraries and made this portfolio." },
+  { id: 3, icon: <FaCss3Alt />, name: "CSS3", description: "This is where it all started, my first love in my dev life." },
+  { id: 4, icon: <FaNodeJs />, name: "NodeJS", description: "Not sure what it is yet but I know I need it." },
+  { id: 5, icon: <FaHtml5 />, name: "HTML5", description: "Respect your elders." },
+  { id: 6, icon: <LuPiano />, name: "Piano", description: "30 years of piano. Mostly Bach and jazz." },
+  { id: 7, icon: <SiMongodb />, name: "MongoDB", description: "EN PLEIN DATA GUEULE !" },
+  { id: 8, icon: <FaGithub />, name: "GitHub", description: "I know git add, commit and push. That's all I need, right ?" },
+  { id: 9, icon: <FaSass />, name: "Sass", description: "My appartment is a mess. But my CSS is now clean and organized." },
 ];
+
 
 const Skills = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [positions, setPositions] = useState([]);
+  const [selectedSkill, setSelectedSkill] = useState(null);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   useEffect(() => {
     let interval;
@@ -74,6 +79,16 @@ const Skills = () => {
     setIsExpanded((prev) => !prev);
   };
 
+  const handleSkillClick = (skill) => {
+    setSelectedSkill(skill);
+    setIsModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setIsModalVisible(false);
+    setSelectedSkill(null);
+  };
+
   return (
     <div className="skills-container">
       {/* Central Button */}
@@ -93,10 +108,19 @@ const Skills = () => {
           position={positions[index] || { x: 0, y: 0 }}
           isExpanded={isExpanded}
           index={index}
+          onClick={() => handleSkillClick(skill)} // Pass the click handler
         />
       ))}
+
+      {/* Modal */}
+      <Modal
+        isVisible={isModalVisible}
+        onClose={closeModal}
+        skill={selectedSkill}
+      />
     </div>
   );
 };
 
 export default Skills;
+ 
