@@ -3,4 +3,7 @@
 .typed-container {
     font-family: variables.$main-font;
     color: variables.$white;
+    @media (min-width: 768px) {
+        font-size: 2em;
+    }
 }

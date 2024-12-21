@@ -15,6 +15,11 @@
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  @media (min-width: 768px) {
+    margin: 12em auto;
+    height: 5.7em;
+    width: 6em;
+  }
 }
 
 .central-button {

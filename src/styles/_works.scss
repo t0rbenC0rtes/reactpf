@@ -21,11 +21,9 @@
   background: transparent;
   @media (min-width: 768px) {
     font-size: 2em;
-    padding-left: 150px;
   }
   @media (min-width: 1024px) {
     font-size: 4em;
-    padding-left: 150px;
   }
 }
 
@@ -34,19 +32,19 @@
   background: transparent;
   @media (min-width: 1024px) {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
   }
 }
 
 .work {
   margin-bottom: 10px;
-  border: 1px solid variables.$white;
+  backdrop-filter: blur(125px);
   border-radius: 12px;
   padding: 30px;
   @media (min-width: 1024px) {
     min-width: 60em;
     max-width: 64em;
-    justify-self: center;    
+    justify-self: center;
   }
 }
 
@@ -62,6 +60,16 @@
 .work-details {
   display: flex;
   flex-direction: column;
+  @media (min-width: 768px) {
+    & h4,
+    a {
+      font-size: 2em;
+    }
+    & p,
+    a {
+      font-size: 1em;
+    }
+  }
 }
 .work-image {
   border-radius: 12px;
