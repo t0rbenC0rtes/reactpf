@@ -1,4 +1,13 @@
 const projects = {
+  "_January 2025": [
+    {
+      id: 15,
+      title: "Zentry",
+      description: "Landing page using React.js, GSAP and Tailwind. Following a tutorial by JavaScript Mastery.",
+      link: "https://zentry-lrhabup1k-antoine-ls-projects-8b403535.vercel.app/",
+      image: "/zentry-screenshot.png",
+    },    
+  ],
   "_December 2024": [
     {
       id: 14,

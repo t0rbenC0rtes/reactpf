@@ -8,8 +8,8 @@ import {
   FaHtml5,
   FaGithub,
   FaSass,
-  FaCannabis,
 } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { LuPiano } from "react-icons/lu";
 import { SiMongodb } from "react-icons/si";
 import { GiUnicycle } from "react-icons/gi";
@@ -80,15 +80,15 @@ const skills = [
   },
   {
     id: 10,
-    icon: <FaCannabis />,
-    name: "Experienced grower",
-    description: "Kids, say no to drugs. At least once.",
-  },
-  {
-    id: 11,
     icon: <GiUnicycle />,
     name: "EUC enjoyer",
     description: "Electric Unicycle changed my life.",
+  },
+  {
+    id: 11,
+    icon: <RiTailwindCssFill />,
+    name: "tailwind",
+    description: "This is some dark magic and I love it.",
   },
 ];
 
@@ -102,7 +102,7 @@ const Skills = () => {
   useEffect(() => {
     // Adjust boundary based on screen size
     const updateBoundary = () => {
-      setBoundary(window.innerWidth > 768 ? 500 : 300);
+      setBoundary(window.innerWidth > 768 ? 350 : 200);
     };
 
     updateBoundary(); // Set initial boundary
@@ -121,7 +121,7 @@ const Skills = () => {
       // Start randomizing positions every 2 seconds
       interval = setInterval(() => {
         setPositions(skills.map(() => getRandomPosition(boundary)));
-      }, 2000);
+      }, 4000);
     } else {
       // Clear the interval when skills collapse
       clearInterval(interval);
@@ -164,7 +164,12 @@ const Skills = () => {
           initial={{ scale: 0, opacity: 0 }}
           animate={
             isExpanded
-              ? { x: positions[index]?.x || 0, y: positions[index]?.y || 0, scale: 1, opacity: 1 }
+              ? {
+                  x: positions[index]?.x || 0,
+                  y: positions[index]?.y || 0,
+                  scale: 1,
+                  opacity: 1,
+                }
               : { x: 0, y: 0, scale: 0, opacity: 0 }
           }
           transition={{ duration: 0.5, delay: index * 0.1 }}

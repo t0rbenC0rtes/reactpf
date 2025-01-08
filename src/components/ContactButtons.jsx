@@ -36,7 +36,7 @@ const contactLinks = [
   {
     id: 4,
     icon: <FaCodepen />,
-    link: "https://codepen.io/your-work",
+    link: "https://codepen.io/Antoine-Lafontaine",
     name: "CodePen",
   },
   {
