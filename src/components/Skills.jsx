@@ -10,9 +10,7 @@ import {
   FaSass,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { LuPiano } from "react-icons/lu";
 import { SiMongodb } from "react-icons/si";
-import { GiUnicycle } from "react-icons/gi";
 import Modal from "./Modal";
 
 // Dynamically calculate boundary based on screen size
@@ -33,7 +31,7 @@ const skills = [
     icon: <FaReact />,
     name: "ReactJS",
     description:
-      "I hated React untill I discovered libraries and made this portfolio.",
+      "I hated React until I discovered libraries and made this portfolio.",
   },
   {
     id: 3,
@@ -54,16 +52,10 @@ const skills = [
     description: "Respect your elders.",
   },
   {
-    id: 6,
-    icon: <LuPiano />,
-    name: "Piano",
-    description: "30 years of piano. Mostly Bach and jazz.",
-  },
-  {
     id: 7,
     icon: <SiMongodb />,
     name: "MongoDB",
-    description: "EN PLEIN DATA GUEULE !",
+    description: "MERN stack for the win.",
   },
   {
     id: 8,
@@ -80,12 +72,6 @@ const skills = [
   },
   {
     id: 10,
-    icon: <GiUnicycle />,
-    name: "EUC enjoyer",
-    description: "Electric Unicycle changed my life.",
-  },
-  {
-    id: 11,
     icon: <RiTailwindCssFill />,
     name: "tailwind",
     description: "This is some dark magic and I love it.",
