@@ -1,6 +1,13 @@
 const projects = {
   "_January 2025": [
     {
+      id: 16,
+      title: "Hubert Hits",
+      description: "Uber Eats mock up. Exploring MERN stack possibilities. All data is fetched from a JSON file containing 1000+ real restaurants from NY.",
+      link: "https://hubert-hits-front.vercel.app/",
+      image: "/HubertHits-screenshot.png",
+    },
+    {
       id: 15,
       title: "Zentry",
       description: "Landing page using React.js, GSAP and Tailwind. Following a tutorial by JavaScript Mastery.",
