@@ -1,19 +1,31 @@
 const projects = {
+  "_February 2025": [
+    {
+      id: 17,
+      title: "RGB Guessr V3",
+      description:
+        "Finally made an improved version of my RGB guessing game, now with a live persistent leaderboard ! Think you can you beat the highscore ?",
+      link: "https://rgbv3.vercel.app/",
+      image: "/rgbV3-screenshot.png",
+    },
+  ],
   "_January 2025": [
     {
       id: 16,
       title: "Hubert Hits",
-      description: "Uber Eats mock up. Exploring MERN stack possibilities. All data is fetched from a JSON file containing 1000+ real restaurants from NY.",
+      description:
+        "Uber Eats mock up. Exploring MERN stack possibilities. All data is fetched from a JSON file containing 1000+ real restaurants from NY.",
       link: "https://hubert-hits-front.vercel.app/",
       image: "/HubertHits-screenshot.png",
     },
     {
       id: 15,
       title: "Zentry",
-      description: "Landing page using React.js, GSAP and Tailwind. Following a tutorial by JavaScript Mastery.",
+      description:
+        "Landing page using React.js, GSAP and Tailwind. Following a tutorial by JavaScript Mastery.",
       link: "https://zentry-lrhabup1k-antoine-ls-projects-8b403535.vercel.app/",
       image: "/zentry-screenshot.png",
-    },    
+    },
   ],
   "_December 2024": [
     {
@@ -26,14 +38,16 @@ const projects = {
     {
       id: 13,
       title: "Xocolate",
-      description: "My brother in law makes amazing pralines, so I made him an amazing website (work in progress)",
+      description:
+        "My brother in law makes amazing pralines, so I made him an amazing website (work in progress)",
       link: "http://xocolate.be/fr/",
       image: "/Xocolate.png",
     },
     {
       id: 12,
       title: "My first steps with ReactJS.",
-      description: "Discovering React. Includes form validation, to-do list and a stock management CMS",
+      description:
+        "Discovering React. Includes form validation, to-do list and a stock management CMS",
       link: "https://t0rbenc0rtes.github.io/ReactFirstSteps/",
       image: "/ReactFirstSteps.png",
     },
@@ -42,7 +56,8 @@ const projects = {
     {
       id: 11,
       title: "Orange Hackathon",
-      description: "'Building for a Better World' Hackathon, a collaboration between Orange & Becode",
+      description:
+        "'Building for a Better World' Hackathon, a collaboration between Orange & Becode",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7264265360613199873/",
       image: "/Orange.jpg",
     },
@@ -72,7 +87,8 @@ const projects = {
     {
       id: 7,
       title: "DBZ API",
-      description: "Having fun with my very first API. Yes doctor it's very ugly.",
+      description:
+        "Having fun with my very first API. Yes doctor it's very ugly.",
       link: "https://t0rbenc0rtes.github.io/DBZ-API/",
       image: "/DBZ-screenshot.png",
     },
@@ -111,14 +127,16 @@ const projects = {
     {
       id: 2,
       title: "Musician",
-      description: "From 2005 to 2019 i've been touring across Europe with various bands, playing piano and trumpet.",
+      description:
+        "From 2005 to 2019 i've been touring across Europe with various bands, playing piano and trumpet.",
       link: "https://soundcloud.com/opmoc",
       image: "/opmoc.jpg",
     },
     {
       id: 1,
       title: "Barista",
-      description: "I only drink black coffee but if you ask nicely I can make you some latte art.",
+      description:
+        "I only drink black coffee but if you ask nicely I can make you some latte art.",
       link: "https://pulp.be/",
       image: "/latte-art.jpg",
     },
