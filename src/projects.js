@@ -4,7 +4,7 @@ const projects = {
       id: 17,
       title: "RGB Guessr V3",
       description:
-        "Finally made an improved version of my RGB guessing game, now with a live persistent leaderboard ! Think you can you beat the highscore ?",
+        "Finally made an improved version of my RGB guessing game, now with a live persistent leaderboard ! Think you can beat the highscore ?",
       link: "https://rgbv3.vercel.app/",
       image: "/rgbV3-screenshot.png",
     },
