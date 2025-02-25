@@ -68,13 +68,7 @@ const skills = [
     icon: <FaSass />,
     name: "Sass",
     description:
-      "My appartment is a mess. But my CSS is now clean and organized.",
-  },
-  {
-    id: 10,
-    icon: <RiTailwindCssFill />,
-    name: "tailwind",
-    description: "This is some dark magic and I love it.",
+      "My appartment is a mess. But my CSS is now clean and organized. I hate tailwindcss. What is bootstrap ?",
   },
 ];
 
