@@ -1,6 +1,14 @@
 const projects = {
   "_February 2025": [
     {
+      id: 18,
+      title: "eDuty - Use Case with Elia.",
+      description:
+        "I had the privilege to develop a use case for Elia, Belgium's high-voltage electricity transmission system operator. The goal was to create a platform that would allow Elia to manage the duty schedules of their employees. The project was developed in collaboration with 3 other students from BeCode. The project was presented to Elia's IT team and they were very impressed with the result.",
+      link: "https://eduty.vercel.app/",
+      image: "/elia-GIF.gif",
+    },
+    {
       id: 17,
       title: "RGB Guessr V3",
       description:
