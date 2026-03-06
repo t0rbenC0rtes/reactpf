@@ -48,7 +48,7 @@ const projects = {
       title: "Xocolate",
       description:
         "My brother in law makes amazing pralines, so I made him an amazing website (work in progress)",
-      link: "http://xocolate.be/fr/",
+      link: "https://www.xocolate.be/",
       image: "/Xocolate.png",
     },
     {
